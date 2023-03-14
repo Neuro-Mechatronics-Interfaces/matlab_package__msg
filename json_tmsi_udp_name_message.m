@@ -22,7 +22,7 @@ function data = json_tmsi_udp_name_message(SUBJ, YYYY, MM, DD, ARRAY, BLOCK)
 %   
 % See also: Contents
 if nargin < 1
-    data = struct('type', 'name.tmsi', 'SUBJ', "Forrest", 'YYYY', 2023, 'MM', 3, 'DD', 12, 'ARRAY', "A", 'BLOCK', 0);
+    data = struct('type', 'name.tmsi', 'subject', "Forrest", 'year', 2023, 'month', 3, 'day', 12, 'array', "A", 'block', 0);
 else
     data = struct('type', 'name.tmsi', 'subject', SUBJ, 'year', YYYY, 'month', MM, 'day', DD, 'array', ARRAY, 'block', BLOCK);
 end
