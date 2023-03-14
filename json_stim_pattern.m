@@ -19,8 +19,8 @@ function data = json_stim_pattern(pattern_name, pattern_amplitude)
 %   
 % See also: Contents
 if nargin < 1
-    data = struct('pattern', "Jsafety_25_x0um_y0um.txt", 'amplitude', 42.1);
+    data = struct('type', 'stim.pattern', 'pattern', "Jsafety_25_x0um_y0um.txt", 'amplitude', 42.1);
 else
-    data = struct('pattern', pattern_name, 'amplitude', pattern_amplitude);
+    data = struct('type', 'stim.pattern', 'pattern', pattern_name, 'amplitude', pattern_amplitude);
 end
 end

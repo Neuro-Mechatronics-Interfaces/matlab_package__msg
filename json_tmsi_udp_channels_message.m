@@ -19,8 +19,8 @@ function data = json_tmsi_udp_channels_message(parameter, value, tag)
 %   
 % See also: Contents
 if nargin < 1
-    data = struct('parameter', "block", 'value', 0, 'tag', "A");
+    data = struct('type', 'par.tagged', 'parameter', "block", 'value', 0, 'tag', "A");
 else
-    data = struct('parameter', parameter, 'value', value, 'tag', tag);
+    data = struct('type', 'par.tagged', 'parameter', parameter, 'value', value, 'tag', tag);
 end
 end

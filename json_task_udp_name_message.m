@@ -19,8 +19,8 @@ function data = json_task_udp_name_message(tank, block)
 %   
 % See also: Contents
 if nargin < 1
-    data = struct('parameter', 'tank', 'tank', "Forrest_2023_03_06", 'block', 0);
+    data = struct('type', 'name.task', 'parameter', 'tank', 'tank', "Forrest_2023_03_06", 'block', 0);
 else
-    data = struct('parameter', 'tank', 'tank', tank, 'block', block);
+    data = struct('type', 'name.task', 'parameter', 'tank', 'tank', tank, 'block', block);
 end
 end
