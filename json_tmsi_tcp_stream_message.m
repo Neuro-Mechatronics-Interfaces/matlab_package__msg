@@ -1,4 +1,4 @@
-function data = json_tmsi_tcp_stream_message(parameter, value, tag)
+function data = json_tmsi_tcp_stream_message(channels, data, tag)
 %JSON_TMSI_TCP_STREAM_MESSAGE  Generate TMSi-stream data for TCP/JSON message.
 %
 % Syntax:
