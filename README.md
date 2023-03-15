@@ -8,7 +8,7 @@ Currently this only contains a few different types of message structures, mostly
 Any function starting with `json_` should return a data struct that can be used with `jsonencode` to generate a serialized message string.  
 If no input arguments are supplied to any of these functions, the default behavior should be to return an example of what a struct of this type could look like.  
 **Required `struct` field:**  
-* `type` - 
+* `type` - This can be used by any listening port to manage handling of the message contents. It allows a single port to accept multiple types of messages.
 
 * [`msg.json_stim_pattern`](json_stim_pattern.m) - Returns struct to be used to pass a stimulation pattern filename and amplitude scalar.
  + `type`: `'stim.pattern'`
@@ -22,5 +22,5 @@ If no input arguments are supplied to any of these functions, the default behavi
  + `type`: `'name.tmsi'`  
 * [`msg.json_task_udp_name_message`](json_task_udp_name_message.m) - Returns struct for handling messages about filenames that are controlled by the wrist center-out task.
  + `type`: `'name.task'`
-
-
+* [`msg.json_tmsi_tcp_streams_message`](json_tmsi_tcp_streams_message.m) - Returns struct for handling tcp messages with data streams from tagged TMSi devices.
+ + `type`: `'stream.tmsi'`
