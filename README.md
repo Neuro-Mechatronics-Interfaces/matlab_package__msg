@@ -24,3 +24,9 @@ If no input arguments are supplied to any of these functions, the default behavi
  + `type`: `'name.task'`
 * [`msg.json_tmsi_tcp_streams_message`](json_tmsi_tcp_streams_message.m) - Returns struct for handling tcp messages with data streams from tagged TMSi devices.
  + `type`: `'stream.tmsi'`
+* [`msg.json_sta_udp_config_message`](json_sta_udp_config_message.m) - Returns struct for handling udp messages with stim-triggered averaging configuration parameters.
+ + `type`: `'sta.config'`
+* [`msg.json_sta_udp_data_message`](json_sta_udp_data_message.m) - Returns struct for handling udp messages with stim-triggered averaging data snippets.
+ + `type`: `'sta.data'`
+* [`msg.json_snippets_udp_config_message`](json_snippets_udp_config_message.m) - Returns struct for handling udp messages with unipolar snippets montage configuration parameters.
+ + `type`: `'snippets.config'`
