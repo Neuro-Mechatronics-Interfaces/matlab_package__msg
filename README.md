@@ -12,8 +12,10 @@ If no input arguments are supplied to any of these functions, the default behavi
 
 * [`msg.json_stim_pattern`](json_stim_pattern.m) - Returns struct to be used to pass a stimulation pattern filename and amplitude scalar.
  + `type`: `'stim.pattern'`
-* [`msg.json_stim_response`](json_stim_response.m) - Returns struct to be used to pass a consolidated multi-channel response metric from an arbitrary number of responses and channels.
+* [`msg.json_stim_response`](json_stim_response.m) - Returns struct to be used to pass response to query about next stim (json_stim_pattern message).
  + `type`: `'stim.response'`
+* [`msg.json_stim_data`](json_stim_data.m) - Returns struct to be used to pass a consolidated multi-channel data metric from an arbitrary number of responses and channels.
+ + `type`: `'stim.data'`
 * [`msg.json_tmsi_udp_channels_message`](json_tmsi_udp_channels_message.m) - Returns struct for configuring stream channels for TMSi.
  + `type`: `'par.tagged'`
 * [`msg.json_tmsi_udp_controller_message`](json_tmsi_udp_controller_message.m) - Returns struct for sending parameter/value keys to TMSi controller service.
