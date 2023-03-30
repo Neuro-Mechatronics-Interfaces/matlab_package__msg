@@ -32,3 +32,5 @@ If no input arguments are supplied to any of these functions, the default behavi
  + `type`: `'sta.data'`
 * [`msg.json_snippets_udp_config_message`](json_snippets_udp_config_message.m) - Returns struct for handling udp messages with unipolar snippets montage configuration parameters.
  + `type`: `'snippets.config'`
+* [`msg.json_tmsi_state_message`](json_tmsi_state_message.m) - Returns struct with recording controller state and block number.
+ + `type`: `'state.tmsi'`
