@@ -24,6 +24,8 @@ If no input arguments are supplied to any of these functions, the default behavi
  + `type`: `'name.tmsi'`  
 * [`msg.json_task_udp_name_message`](json_task_udp_name_message.m) - Returns struct for handling messages about filenames that are controlled by the wrist center-out task.
  + `type`: `'name.task'`
+* [`msg.json_tmsi_request_message`](json_tmsi_request_message.m) - Returns struct with TMSi-controller parameter-request fields.
+ + `type`: `'request.tmsi'`
 * [`msg.json_tmsi_tcp_streams_message`](json_tmsi_tcp_streams_message.m) - Returns struct for handling tcp messages with data streams from tagged TMSi devices.
  + `type`: `'stream.tmsi'`
 * [`msg.json_sta_udp_config_message`](json_sta_udp_config_message.m) - Returns struct for handling udp messages with stim-triggered averaging configuration parameters.
