@@ -20,6 +20,6 @@ function data = json_tmsi_state_message(state, block)
 if nargin < 1
     data = struct('type', 'state.tmsi', 'state', "idle", 'block', 0);
 else
-    data = struct('type', 'state.tmsi', 'state', state, 'block', block);
+    data = struct('type', 'state.tmsi', 'state', string(state), 'block', block);
 end
 end

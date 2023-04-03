@@ -36,3 +36,7 @@ If no input arguments are supplied to any of these functions, the default behavi
  + `type`: `'snippets.config'`
 * [`msg.json_tmsi_state_message`](json_tmsi_state_message.m) - Returns struct with recording controller state and block number.
  + `type`: `'state.tmsi'`
+* [`msg.json_data_server_request`](json_data_server_request.m) - Returns struct with request info to get specific information from MEP responses data server.
+ + `type`: `'mep.request'`
+* [`msg.json_data_server_response`](json_data_server_response.m) - Returns struct with requested subset of MEP response data, with indexing info as well.
+ + `type`: `'mep.response'`
